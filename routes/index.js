@@ -11,6 +11,6 @@ const api = express.Router()
   api.get('/food/:foodId', foodCtrl.getFood ) //Peticion por id
   api.post('/food' , foodCtrl.saveFood)//Termino de POST
   api.put('/food/:foodId' ,foodCtrl.updateFood)//Termino de PUT
-  api.delete( '/food//delete/:foodId', foodCtrl.deleteFood)
+  api.delete( '/food/delete/:foodId', foodCtrl.deleteFood)
  
   module.exports = api 
