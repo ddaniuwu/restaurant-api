@@ -44,13 +44,6 @@ app.use(morgan('dev'));
 app.use(methodOverride('_method'))
 
 
-  
-//app.set('view engine', '.hbs')
-//app.use('/api', api)
-//app.get('/food', (req, res)=>{
-  //  res.render('getfood')
-//})
-
 app.use('/api', api)
   
 module.exports = app
