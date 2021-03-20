@@ -36,7 +36,6 @@ POST FOOD
  
 
 ### In almost case of our page we've used css styles with the properity hover , so if we navigate into the body of our main image we can apreciatte diferent styles applied to the page 
-=============
 
 ![](https://github.com/ddaniuwu/restaurant-api/blob/b591fd3d3e91eddbb32fe9e4a7178d44ffb7928a/public/img2/postfood.PNG)
 - We will add an item. To make this action we have to go to the end of our page and where we will se something like this.
