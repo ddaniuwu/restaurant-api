@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Luis Daniel Hernández Guevara (github:ddaniuwu)",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
