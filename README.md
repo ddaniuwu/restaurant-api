@@ -1,24 +1,24 @@
 
-"MEXICANI'S"
+"MEXICANI'S"🎂🎲☺👍
 =============
 
-### Tools
+### Tools 🕶👓🥼🛒
 
 - I'ts made with Express-Node js/ MongoDB 
 - Only HMTML Markdown and - CSS Styles;
 - Handdlebars as template engine;
 
-### Content
+### Content 
 - As first point when you access to the page you will see something like this , in this case this is the default header all the project
 - you can acces to the project by /index route
 ![](https://github.com/ddaniuwu/restaurant-api/blob/b591fd3d3e91eddbb32fe9e4a7178d44ffb7928a/public/img2/HeaderScreeen.PNG)
 
-### Body Page & Add a Item
+### Body Page & Add a Item 
 -Next to this , en the middle of our page we can see a variety of food and other features 
 ![](https://github.com/ddaniuwu/restaurant-api/blob/b591fd3d3e91eddbb32fe9e4a7178d44ffb7928a/public/img2/ScreeenBody.PNG)
 ![](https://github.com/ddaniuwu/restaurant-api/blob/b591fd3d3e91eddbb32fe9e4a7178d44ffb7928a/public/img2/BodyScreen2.PNG)
 
-### View a Item
+### View a Item 👀
 - In the almost end of our page we can apreciate a button if we push it we can get all the products that we've added previously
 ![](https://github.com/ddaniuwu/restaurant-api/blob/b591fd3d3e91eddbb32fe9e4a7178d44ffb7928a/public/img2/BodyScreen3.PNG)
 -We can push it and we will get something like this:
@@ -30,7 +30,7 @@
 - ![](https://github.com/ddaniuwu/restaurant-api/blob/b591fd3d3e91eddbb32fe9e4a7178d44ffb7928a/public/img2/ResultSeeBy.PNG)
 
 
-POST FOOD
+POST FOOD 🥖🧀🥗🥗🌮🌮🍿
 =============
 ### What if we eant to add a new Item?
 -Firstly we have to navigate until the header of our page and pushing the button "Ver" we will go to the PostFood page(/postfood)
