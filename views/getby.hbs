@@ -1,0 +1,79 @@
+
+
+<div class="wrapper">
+  <ul class="navigation">
+  <li>  
+    <a href='postfood'>Agregar
+<img src="https://image.flaticon.com/icons/png/512/121/121515.png" class="icon">
+</a>
+</li>
+</ul>
+
+
+<script type="text/javascript">
+function pintar(){
+ let foodList = document.createElement('ul')
+
+ const myHeaders = new Headers();
+ myHeaders.append('authorization', `Bearer ${localStorage.token}`)
+
+ fetch('/api/food',{
+     method:'GET',
+     headers: myHeaders
+ })
+
+ .then(res => res.json())
+ .then(data => {
+     data.foods.map(food => {
+         let text = document.createTextNode(food.name)
+
+       let elem = document.createElement('li')
+       elem.appendChild(text)
+       foodList.appendChild(elem)
+     })
+  var print= document.body.appendChild(foodList).addEventListener(onclick)
+ })
+
+ }
+
+</script>
+
+<script type="text/javascript">
+function seePriceList(){
+ let priceList = document.createElement('ul')
+
+ const newHeaders = new Headers();
+ newHeaders.append('authorization', `Bearer ${localStorage.token}`)
+
+ fetch('/api/food',{
+     method:'GET',
+     headers: newHeaders
+ })
+
+ .then(res => res.json())
+ .then(data => {
+     data.foods.map(food => {
+
+         let text1 = document.createTextNode(food.price)
+
+       let elem1 = document.createElement('li')
+       elem1.appendChild(text1)
+       priceList.appendChild(elem1)
+     })
+     
+   var printprices=  document.body.appendChild(priceList).addEventListener(onclick)
+ })
+ }
+</script>
+
+
+<button onclick="pintar()" class="boton">
+Nombre
+</button>
+
+
+<button onclick="seePriceList()" class="boton">
+Precios
+</button>
+
+

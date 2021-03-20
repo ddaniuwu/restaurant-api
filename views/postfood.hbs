@@ -1,0 +1,101 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+<ul class="navigation">
+  <li><a href='index'>Ver
+        <img src="https://image.flaticon.com/icons/png/512/129/129448.png" class="icon">
+
+  </a></li>
+  
+</ul>
+
+
+<img src="https://cdn.pixabay.com/photo/2021/01/26/16/27/hamburguesa-5952133_960_720.jpg" alt="" srcset="" class="MyHeader">
+
+
+<ul class="flex-container">
+  <li class="flex-item">
+<img src="https://cdn.pixabay.com/photo/2015/03/03/07/21/hot-dog-657039_960_720.jpg" alt="" class="burguer">
+</li>
+  <li class="flex-item">
+<img src="https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011_960_720.jpg" alt="" class="burguer">
+</li>
+  <li class="flex-item">
+    <img src="https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795_960_720.jpg" alt="" class="burguer">
+  </li>
+  <li class="flex-item">
+    <img src="https://cdn.pixabay.com/photo/2014/09/26/19/51/drink-462776_960_720.jpg" alt="" class="burguer">
+  </li>
+  <li class="flex-item">
+    <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg" alt="" class="burguer">
+  </li>
+  <li class="flex-item">
+    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg" alt="" class="burguer">
+  </li>
+</ul>
+
+  
+<h1>Agregar Productos</h1>
+<form action="/api/food" method="POST">
+    <label>Nombre</label>
+    <input type="text" name="name" placeholder="eg-Salchichas de pavo" class="box" required><br>
+        <label>Precio</label><br>
+    <input type="text" name="price" placeholder="ej-500" class="box" required><br>
+        <label>Categoria</label><br>
+     <select name="category" aria-placeholder="ej-Platillos" class="box">
+      <option value="" class="box">Seleccione:</option>
+      <option value="Platillos" name="Platillos" class="box">Platillos</option>
+      <option value="Postres" name="Postres" class="box">Postres</option>
+      <option value="Bebidas" name="Bebidas" class="box">Bebidas</option>
+    </select><br>
+     <label>Descripcion</label>
+    <input type="text" name="description" placeholder="ej-Contiene, pasas, doble queso , salsa tipo inglesa" class="box" required><br>
+    <button type="submit" class="boton" >
+        Agregar
+    </button>
+</form>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Papas', 'Bebidas', 'Hambruguesas', 'Combo1', 'Combo2', 'HotDogs'],
+        datasets: [{
+            label: 'Articulos más vendidos',
+            data: [19, 10, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255,9, 132, 8)',
+                'rgba(255, 62, 235, 0.2)',
+                'rgb(247, 17, 36)',
+                'rgba(75, 192, 192, 0.2)',
+                 'rgba(247, 63, 17)',
+                  'rgb(75, 247, 17)'
+            ],
+            borderColor: [
+                'rgba(255,9, 132, 8)',
+                'rgba(255, 62, 235, 0.2)',
+                'rgb(247, 17, 36)',
+                'rgb(17, 151, 247)',
+                 'rgba(247, 63, 17)',
+                'rgb(75, 247, 17)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+<div id="myChart">
+
+</div>
